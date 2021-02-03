@@ -1,6 +1,5 @@
 package algo_0203;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Babygin {
@@ -12,10 +11,7 @@ public class Babygin {
 			int[] arr = new int[6];
 			int[] arr2 = new int[11];
 			
-			boolean triplet = false;
-			boolean run = false;
-			boolean babyGin = false;
-			int tripCnt = 0, runCnt = 0, babyCnt = 0;
+			int babyCnt = 0;
 			
 			for(int j = 0; j < 6; j++) {
 				arr[j] = sc.nextInt();
@@ -27,7 +23,6 @@ public class Babygin {
 				if(arr2[j] >= 3) {
 					babyCnt++;
 					arr2[j] -= 3;
-					triplet = true;
 					
 					j--;
 					continue;
@@ -36,7 +31,6 @@ public class Babygin {
 				if(j >= 2) {
 					if(arr2[j] != 0) {
 						if(arr2[j-1] != 0 && arr2[j-2] != 0) {
-							run = true;
 							arr2[j]--;
 							arr2[j+1]--;
 							arr2[j+2]--;

@@ -18,9 +18,9 @@ public class swea_1223_계산기2 {
 			
 			for(int n = 0; n < T; n++) {
 				if(str.charAt(n) == '*') {
-					int num = st1.pop() * (str.charAt(n+1)-'0');
+					int num = st1.pop() * (str.charAt(++n)-'0');
 					st1.push(num);
-					n++;
+					//n++;
 				}else if(str.charAt(n) != '+'){
 					st1.push(str.charAt(n) - '0');
 				}
@@ -28,9 +28,8 @@ public class swea_1223_계산기2 {
 			
 			int result = 0;
 			
-			while(st1.size() >= 2) {
-				result = st1.pop() + st1.pop();
-				st1.push(result);
+			while(!st1.isEmpty()) {
+				result += st1.pop();
 			}
 			
 			StringBuilder sb = new StringBuilder();

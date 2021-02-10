@@ -59,17 +59,22 @@ public class bj_3190 {
 				}
 			}
 
+			//배열 벗어나면 break
 			if(x + dx[direct] == N+1 || x + dx[direct] == 0 || y + dy[direct] == N+1 || y + dy[direct] == 0)
 				break;
-
+			
+			//머리랑 몸이랑 닿으면 break
 			if(arr[x + dx[direct]][y + dy[direct]] == 1)
 				break;
 			
+			//사과가 있는지 없는지 체크
 			if(arr[x + dx[direct]][y + dy[direct]] != 2) {
+				//없으면 한칸 전진
 				arr[x + dx[direct]][y + dy[direct]] = 1;
+				//큐에 추가
+				snake.offer(new int[] {x + dx[direct], y + dy[direct]});
 				int[] passed = snake.poll();
 				arr[passed[0]][passed[1]] = 0;
-				snake.offer(new int[] {x + dx[direct], y + dy[direct]});
 			}else {
 				arr[x + dx[direct]][y + dy[direct]] = 1;
 				snake.offer(new int[] {x + dx[direct], y + dy[direct]});

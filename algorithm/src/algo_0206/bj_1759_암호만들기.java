@@ -3,7 +3,7 @@ package algo_0206;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class bj_1759_¾ÏÈ£¸¸µé±â {
+public class bj_1759_ì•”í˜¸ë§Œë“¤ê¸° {
 
 	static char selected[];
 	static int L = 0;

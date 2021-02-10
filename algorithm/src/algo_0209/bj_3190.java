@@ -34,7 +34,7 @@ public class bj_3190 {
 		}
 		
 		int cnt = 0;
-		int dx[] = {0, 1, 0, -1}; //¿À¾Æ¿ŞÀ§
+		int dx[] = {0, 1, 0, -1}; //ì˜¤ì•„ì™¼ìœ„
 		int dy[] = {1, 0, -1, 0};
 		int direct = 0;
 		int x = 1, y = 1;
@@ -59,19 +59,19 @@ public class bj_3190 {
 				}
 			}
 
-			//¹è¿­ ¹ş¾î³ª¸é break
+			//ë°°ì—´ ë²—ì–´ë‚˜ë©´ break
 			if(x + dx[direct] == N+1 || x + dx[direct] == 0 || y + dy[direct] == N+1 || y + dy[direct] == 0)
 				break;
 			
-			//¸Ó¸®¶û ¸öÀÌ¶û ´êÀ¸¸é break
+			//ë¨¸ë¦¬ë‘ ëª¸ì´ë‘ ë‹¿ìœ¼ë©´ break
 			if(arr[x + dx[direct]][y + dy[direct]] == 1)
 				break;
 			
-			//»ç°ú°¡ ÀÖ´ÂÁö ¾ø´ÂÁö Ã¼Å©
+			//ì‚¬ê³¼ê°€ ìˆëŠ”ì§€ ì—†ëŠ”ì§€ ì²´í¬
 			if(arr[x + dx[direct]][y + dy[direct]] != 2) {
-				//¾øÀ¸¸é ÇÑÄ­ ÀüÁø
+				//ì—†ìœ¼ë©´ í•œì¹¸ ì „ì§„
 				arr[x + dx[direct]][y + dy[direct]] = 1;
-				//Å¥¿¡ Ãß°¡
+				//íì— ì¶”ê°€
 				snake.offer(new int[] {x + dx[direct], y + dy[direct]});
 				int[] passed = snake.poll();
 				arr[passed[0]][passed[1]] = 0;
@@ -89,4 +89,3 @@ public class bj_3190 {
 	}
 	
 }
-

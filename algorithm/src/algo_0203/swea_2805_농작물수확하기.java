@@ -2,7 +2,7 @@ package algo_0203;
 
 import java.util.Scanner;
 
-public class swea_2805_³óÀÛ¹°¼öÈ®ÇÏ±â {
+public class swea_2805_ë†ì‘ë¬¼ìˆ˜í™•í•˜ê¸° {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

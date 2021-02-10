@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class swea_1225_¾ÏÈ£»ı¼º±â {
+public class swea_1225_ì•”í˜¸ìƒì„±ê¸° {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));

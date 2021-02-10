@@ -2,7 +2,7 @@ package algo_0206;
 
 import java.util.Scanner;
 
-public class bj_16922_·Î¸¶¼ıÀÚ¸¸µé±â {
+public class bj_16922_ë¡œë§ˆìˆ«ìë§Œë“¤ê¸° {
 
 	static int[] romeNum = new int[] {1, 5, 10, 50};
 	static int N = 0;

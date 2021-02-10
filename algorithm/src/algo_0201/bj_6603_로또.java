@@ -2,7 +2,7 @@ package algo_0201;
 
 import java.util.Scanner;
 
-public class bj_6603_·Î¶Ç {
+public class bj_6603_ë¡œë˜ {
 	static int arr[];
 	static int numbers[] = new int[6];
 	static int k;

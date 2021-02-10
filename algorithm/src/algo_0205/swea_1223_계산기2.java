@@ -3,7 +3,7 @@ package algo_0205;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class swea_1223_°è»ê±â2 {
+public class swea_1223_ê³„ì‚°ê¸°2 {
 
 	public static void main(String[] args){
 

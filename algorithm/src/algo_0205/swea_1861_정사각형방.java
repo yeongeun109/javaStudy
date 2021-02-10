@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class swea_1861_Á¤»ç°¢Çü¹æ {
+public class swea_1861_ì •ì‚¬ê°í˜•ë°© {
 
-	static int[] dx = {-1,1,0,0}; //À§ ¾Æ·¡ ¿À¸¥ÂÊ ¿ŞÂÊ
+	static int[] dx = {-1,1,0,0}; 
 	static int[] dy = {0,0,1,-1};
 	static int[] max = new int[2];
 	static int cnt = 0;

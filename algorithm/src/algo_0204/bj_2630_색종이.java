@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class bj_2630_»öÁ¾ÀÌ {
+public class bj_2630_ìƒ‰ì¢…ì´ {
 	
 	static int[][] arr;
 	static int blue = 0;

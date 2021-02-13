@@ -43,7 +43,7 @@ public class bj_7511_소셜네트워킹어플리케이션 {
 				int x = find(a);
 				int y = find(b);
 				if(x == y) {
-					union(x, y);
+					//union(x, y);
 					sb.append("1\n");
 				}else
 					sb.append("0\n");

@@ -37,7 +37,6 @@ public class bj_15686_치킨배달 {
 		}
 		comb(0,0);
 		System.out.println(min);
-		
 	}
 
 	private static void comb(int cnt, int start) {
@@ -53,7 +52,6 @@ public class bj_15686_치킨배달 {
 	}
 
 	private static void calc() {
-		
 		int[] distance = new int[house.size()];
 			
 		for(int i = 0; i < house.size(); i++) {

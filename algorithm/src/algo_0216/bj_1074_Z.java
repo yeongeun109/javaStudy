@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class bj_1074_Z {
 
 	static long[][] arr;
-	//static int cnt = 0;
 	static int result = 0;
 	static int r, c;
 	private static int[] dx = {0, 1, 0, 1};
@@ -45,6 +44,5 @@ public class bj_1074_Z {
 		divide(x, y+size/2, newSize, cnt+(newSize*newSize));
 		divide(x+size/2, y, newSize, cnt+(newSize*newSize*2));
 		divide(x+size/2, y+size/2, newSize, cnt+(newSize*newSize*3));
-		
 	}
 }

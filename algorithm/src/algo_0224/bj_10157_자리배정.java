@@ -11,7 +11,6 @@ public class bj_10157_자리배정 {
 		sc.nextLine();
 		int K = sc.nextInt();
 		
-		int dir = 0;
 		int x = 1;
 		int y = 0;
 		int num = 0;
@@ -34,7 +33,6 @@ public class bj_10157_자리배정 {
 					}
 				}
 				rX--;
-				
 				
 				if(flag == true)
 					break;

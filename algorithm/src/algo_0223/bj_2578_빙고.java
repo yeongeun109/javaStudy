@@ -9,8 +9,6 @@ public class bj_2578_빙고 {
 
 	static int[][] arr = new int[5][5];
 	static int cnt = 0;
-	static boolean diagonal1 = false;
-	static boolean diagonal2 = false;
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));

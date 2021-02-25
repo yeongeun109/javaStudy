@@ -44,10 +44,6 @@ public class bj_2628_종이자르기 {
 		}
 		garoCutList.add(new int[] {p, 0, y - 1, x - 1});
 		
-		/*for(int i = 0; i < garoCutList.size(); i++)
-			System.out.println(Arrays.toString(garoCutList.get(i)));
-		System.out.println("-------------------");*/
-		
 		p = 0;
 		for(int i = 0; i < sero.size(); i++) {
 			for(int j = 0; j < garoCutList.size(); j++) {
@@ -61,9 +57,6 @@ public class bj_2628_종이자르기 {
 		for(int i = 0; i < garoCutList.size(); i++) {
 			seroCutList.add(new int[] {garoCutList.get(i)[0], p, garoCutList.get(i)[2], x - 1});
 		}
-		
-		/*for(int i = 0; i < seroCutList.size(); i++)
-			System.out.println(Arrays.toString(seroCutList.get(i)));*/
 		
 		int max = 0;
 		for(int i = 0; i < seroCutList.size(); i++) {

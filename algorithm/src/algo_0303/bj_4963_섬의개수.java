@@ -63,8 +63,6 @@ public class bj_4963_섬의개수 {
 		}
 		
 		for(int x = 0; x < 8; x++) {
-			
-			
 			if(i + dx[x] < 0 || i + dx[x] >= h || j + dy[x] < 0 || j + dy[x] >= w) {
 				continue;
 			}else {

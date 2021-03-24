@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -50,14 +51,16 @@ public class bj_1916_최소비용구하기 {
 		
 		while(!pq.isEmpty()) {
 			int[] temp = pq.poll();
+			int vertex = temp[0];
+			int cost = temp[1];
 			
-			if(temp[1] > distance[temp[0]])
+			if(cost > distance[vertex])
 				continue;
 			
-			for(int j = 0; j < list[temp[0]].size(); j++) {
-				if(distance[list[temp[0]].get(j)[0]] > temp[1] + list[temp[0]].get(j)[1]) {
-					distance[list[temp[0]].get(j)[0]] = temp[1] + list[temp[0]].get(j)[1];
-					pq.offer(new int[] {list[temp[0]].get(j)[0], distance[list[temp[0]].get(j)[0]]});
+			for(int j = 0; j < list[vertex].size(); j++) {
+				if(distance[list[vertex].get(j)[0]] > cost + list[vertex].get(j)[1]) {
+					distance[list[vertex].get(j)[0]] = cost + list[vertex].get(j)[1];
+					pq.offer(new int[] {list[vertex].get(j)[0], distance[list[vertex].get(j)[0]]});
 				}
 			}
 		}

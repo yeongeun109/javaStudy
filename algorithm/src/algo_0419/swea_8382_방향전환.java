@@ -23,13 +23,6 @@ public class swea_8382_방향전환 {
 			int max = Math.max(x, y);
 			int min = Math.min(x, y);
 			
-			/*if(x == y)
-				result = x * 2;
-			else if(max % 2 == 0)
-				result = max * 2;
-			else
-				result = max * 2 - 1;*/
-			
 			if(max % 2 == 1) {
 				if(min % 2 == 0)
 					result = max * 2 - 1;

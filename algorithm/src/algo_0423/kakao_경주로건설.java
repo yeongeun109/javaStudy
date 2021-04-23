@@ -5,7 +5,6 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
 public class kakao_경주로건설 {
 
 	public static class Line{
@@ -25,7 +24,6 @@ public class kakao_경주로건설 {
 	
 	public static void main(String[] args) {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		//int n = 3;
 		int[][] board =  {
 				{0, 0, 0}, {0, 0, 0}, {0, 0, 0}
 		};
@@ -43,7 +41,6 @@ public class kakao_경주로건설 {
 
 	public static int solution(int[][] board) {
         int N = board.length;
-		int answer = 0;
 		int[] dx = {0, 1, 0, -1};
 		int[] dy = {1, 0, -1, 0};
 
@@ -91,5 +88,4 @@ public class kakao_경주로건설 {
 		
 		return visited[N-1][N-1];
     }
-
 }

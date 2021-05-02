@@ -29,8 +29,6 @@ public class bj_16463_13일의금요일 {
 					yoil += 2;
 				else if(day[j] == 29)
 					yoil += 1;
-				else
-					yoil += 0;
 				
 				if(yoil >= 7)
 					yoil -= 7;

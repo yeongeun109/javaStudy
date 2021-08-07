@@ -20,10 +20,6 @@ public class pg_여행경로 {
     static public String[] solution(String[][] tickets) {
         visited = new boolean[tickets.length];
         dfs(tickets, 0, "ICN", "ICN");
-        // for(int i = 0; i < list.size(); i++){
-        //     System.out.println(Arrays.toString(list[i]));
-        // }
-        //System.out.println(list);
         Collections.sort(list);
         String[] answer = list.get(0).split(" ");
         return answer;
@@ -31,7 +27,6 @@ public class pg_여행경로 {
     
     static public void dfs(String[][] tickets, int cnt, String prev, String tmpAns){
         if(cnt == tickets.length){
-            System.out.println(tmpAns);
             list.add(tmpAns);
             return;
         }
@@ -39,7 +34,6 @@ public class pg_여행경로 {
         for(int i = 0; i < tickets.length; i++){
             if(tickets[i][0].equals(prev) && !visited[i]){
                 visited[i] = true;
-                System.out.println(tmpAns);
                 dfs(tickets, cnt + 1, tickets[i][1], tmpAns + " " + tickets[i][1]);
                 visited[i] = false;
             }
